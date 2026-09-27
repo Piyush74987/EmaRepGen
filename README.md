@@ -14,7 +14,17 @@ An end-to-end, enterprise-grade AI email productivity suite consisting of:
 
 ---
 
+## 📸 Live Demo & Preview
+
+| 1. Direct AI Reply Generation in Gmail | 2. Dynamic Tone Profile Selector |
+| :---: | :---: |
+| ![AI Reply Generated](assets/demo-reply-generated.png) | ![Tone Selection](assets/demo-tone-selection.png) |
+| *Smart AI Reply generated directly into Gmail's compose box with context preservation* | *Tone profile selector (Professional, Casual, Friendly, Concise, Formal, Urgent)* |
+
+---
+
 ## 📑 Table of Contents
+- [Live Demo & Preview](#-live-demo--preview)
 - [Architecture & System Design](#-architecture--system-design)
 - [Tech Stack](#-tech-stack)
 - [Key Features](#-key-features)
@@ -112,6 +122,10 @@ graph LR
 
 ```plaintext
 EmailReplyGenerator/
+├── assets/                                              # Visual assets and demo screenshots
+│   ├── demo-reply-generated.png                         # Live Gmail contextual AI reply screenshot
+│   └── demo-tone-selection.png                          # Dynamic tone selector dropdown screenshot
+│
 ├── Backend/
 │   └── email-writer-3/
 │       ├── src/
