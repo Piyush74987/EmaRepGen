@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Email Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <div class="header-brand">
+        <img src="icons/icon48.png" alt="Logo" class="logo">
+        <div>
+          <h1 class="title">AI Email Reply</h1>
+          <p class="subtitle">Gmail Assistant</p>
+        </div>
+      </div>
+      <div id="backend-status-pill" class="status-pill status-unknown">
+        <span class="status-dot"></span>
+        <span id="backend-status-text">Checking...</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="card">
+        <label class="label" for="default-tone">Default Reply Tone</label>
+        <select id="default-tone" class="select-input">
+          <option value="professional">Professional</option>
+          <option value="casual">Casual</option>
+          <option value="friendly">Friendly</option>
+          <option value="concise">Concise & Direct</option>
+          <option value="formal">Formal</option>
+          <option value="urgent">Urgent</option>
+        </select>
+      </div>
+
+      <div class="card">
+        <label class="label" for="backend-url">Backend Server URL</label>
+        <div class="url-input-group">
+          <input type="text" id="backend-url" class="text-input" value="http://localhost:8080" placeholder="http://localhost:8080">
+          <button id="save-url-btn" class="secondary-btn">Save</button>
+        </div>
+      </div>
+
+      <div class="action-section">
+        <button id="check-connection-btn" class="primary-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          Test Backend Connection
+        </button>
+        <p id="connection-message" class="info-message"></p>
+      </div>
+
+      <div class="guide-box">
+        <h3 class="guide-title">How to use in Gmail:</h3>
+        <ol class="guide-list">
+          <li>Open an email thread in Gmail and click <strong>Reply</strong>.</li>
+          <li>Find the purple <strong>✨ AI Reply</strong> button next to the Send button.</li>
+          <li>Choose your preferred tone and click to generate!</li>
+        </ol>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>AI Email Reply Assistant v1.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
