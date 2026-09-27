@@ -99,10 +99,7 @@ graph LR
 - **State Management**: `chrome.storage.local`
 - **UI & Styling**: Vanilla CSS3, Google Sans typography, custom SVG micro-animations, floating toast system
 
-### Frontend Dashboard
-- **Framework**: React 19 + Vite
-- **UI Components**: Material UI (MUI v7) & Emotion
-- **HTTP Client**: Axios
+
 
 ---
 
@@ -157,12 +154,6 @@ EmailReplyGenerator/
 │   ├── popup.css                                        # Popup modern styling
 │   └── icons/                                           # 16px, 48px, 128px PNG icons
 │
-├── Frontend/
-│   └── email-writer-react/                              # React + Vite standalone web UI
-│       ├── src/
-│       │   ├── App.jsx                                  # Main generation dashboard
-│       │   └── main.jsx
-│       └── package.json
 │
 ├── .gitignore                                           # Clean Git tracking filters
 └── README.md                                            # Project documentation & interview guide
@@ -236,14 +227,6 @@ EmailReplyGenerator/
 
 ---
 
-### 4. (Optional) Run the React Web Dashboard
-
-```powershell
-cd D:\Project\EmailReplyGenertor\Frontend\email-writer-react
-npm install
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
